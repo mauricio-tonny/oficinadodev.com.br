@@ -2,7 +2,7 @@
 <html lang="pt">
 <!--
 
-Version : 1.8
+Version : 1.9
 Author  : github.com/mauricio-tonny
 
  -->
@@ -39,23 +39,25 @@ Author  : github.com/mauricio-tonny
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <nav class="navbar navbar-dark navbar-expand-lg">
+                    <nav class="navbar navbar-dark navbar-expand-lg" role="navigation">
                         <!-- logo -->
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/logo_oficinadodev.png" width="240" height="65" class="img-fluid logo" alt="logo"></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                        <a class="navbar-brand" href="index.html" title="OficinaDoDEV - sua oficina de desenvolvimento">
+                            <img src="images/logo_oficinadodev.png" width="240" height="65" class="img-fluid logo" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegação">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"><a class="nav-link active" href="#home">HOME<span class="sr-only">(current)</span></a></li>
+                                <li class="nav-item"><a class="nav-link active" href="#home" aria-current="page">HOME<span class="sr-only">(current)</span></a></li>
                                 <li class="nav-item"><a class="nav-link" href="#tutoriais">TUTORIAIS</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#sobre">SOBRE</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#fazemos">O QUE FAZEMOS</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#quemsou">QUEM SOU EU</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">CONTATO</a></li>
                                 <li class="nav-item">
-                                    <a href="https://api.whatsapp.com/send?phone=5543999562536&text=Ol%C3%A1,%20(OficinaDoDEV)" target="_blank" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Falar no WhatsApp</a></li>
+                                    <a href="https://api.whatsapp.com/send?phone=5543999562536&text=Ol%C3%A1,%20(OficinaDoDEV)" target="_blank" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Falar no WhatsApp</a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -70,7 +72,9 @@ Author  : github.com/mauricio-tonny
             <h1>Bem vindo à Oficina do DEV !</h1>
             <p class="tagline">Criado e mantido por: Mauricio Silva. </p>
         </div>
-        <div class="img-holder mt-3"><img src="images/background_hd650.png" width="650" height="433" alt="phone" class="img-fluid"></div>
+        <div class="img-holder mt-3">
+            <img src="images/background_hd650.png" width="650" height="433" alt="Imagem de fundo da Oficina do DEV" class="img-fluid">
+        </div>
     </header>
 
     <div class="section light-bg" id="tutoriais">
@@ -82,7 +86,7 @@ Author  : github.com/mauricio-tonny
             </div>
 
             <div class="section-title dica">
-                <span>Clique no framework desejado para visualizar os tutoriais !</span>
+                <p>Clique no framework desejado para visualizar os tutoriais!</p>
             </div>
 
             <div class="row">
@@ -96,7 +100,7 @@ Author  : github.com/mauricio-tonny
                                     </span>
                                     <div class="media-body">
                                         <h4 class="card-title">Magento 1</h4>
-                                        <p class="card-text">É um sistema web de e-commerce de código aberto baseado em PHP e MySQ, utilizando elementos do Framework Zend.</p>
+                                        <p class="card-text">É um sistema web de e-commerce de código aberto baseado em PHP e MySQL, utilizando elementos do Framework Zend.</p>
                                     </div>
                                 </div>
                             </div>
@@ -163,6 +167,8 @@ Author  : github.com/mauricio-tonny
             <!-- end .section slide -->
         </div>
     </div>
+
+    
 
     <div class="section" id="sobre">
 
