@@ -57,7 +57,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-h3 {
+.zz_h3 {
     color: #194756;
     font-size: 35px;
     font-weight: 500;
@@ -69,7 +69,7 @@ h4 {
     color: #194756;
 }
 
-h5 {
+.zz_5 {
     font-size: 28px;
     font-weight: 300;
     color: #194756;
@@ -354,6 +354,8 @@ header {
 .perspective-phone {
     position: relative;
     z-index: -1;
+    width: 50%;
+    text-align: center;
 }
 
 .container.sobre {
@@ -365,6 +367,9 @@ header {
 }
 
 @media (max-width: 768px) {
+    .perspective-phone {
+        width: 100%;
+    }
     .container.sobre {
         display: block;
     }
