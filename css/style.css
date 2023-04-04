@@ -566,9 +566,23 @@ header {
     margin-bottom: 0.1rem !important;
 }
 
+.zz_version {
+    font-size: 11px;
+    float: right;
+    margin-right: 10px;
+    background: #0c5460;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
 @media (max-width:991px) {
     .social-icons {
         text-align: center;
         margin-top: 2rem;
+    }
+    .zz_version {
+        float: inherit;
+        margin: 0 35%;
     }
 }
