@@ -564,6 +564,7 @@ header {
 
 .my-footer .mb-2 {
     margin-bottom: 0.1rem !important;
+    padding-bottom: 1.5rem;
 }
 
 .zz_version {
@@ -584,5 +585,8 @@ header {
     .zz_version {
         float: inherit;
         margin: 0 35%;
+    }
+    .my-footer {
+        padding-bottom: 0rem;
     }
 }
