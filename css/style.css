@@ -251,6 +251,9 @@ p.lead {
         height: 1px;
         position: absolute;
     }
+    #desktop {
+        display: none;
+    }
 }
 
 @media (max-width:991px) {
@@ -259,6 +262,24 @@ p.lead {
     }
     .navbar-nav .nav-item {
         text-align: center;
+    }
+}
+
+/* slider - function */
+
+@media (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile .tecnolog {
+        margin: 0 20px;
     }
 }
 
@@ -306,6 +327,7 @@ header {
     .img-holder {
         padding-bottom: 100%;
     }
+
 }
 
 .gradient-fill:before {
@@ -575,6 +597,8 @@ header {
     padding: 5px 10px;
     border-radius: 20px;
 }
+
+
 
 @media (max-width:991px) {
     .social-icons {
