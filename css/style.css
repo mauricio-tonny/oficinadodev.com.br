@@ -74,6 +74,7 @@ h2 {
     font-weight: 300;
     color: #194756;
     margin-bottom: 0.7rem;
+    margin-top: 0px !important;
 }
 
 p {
@@ -251,6 +252,18 @@ p.lead {
         height: 1px;
         position: absolute;
     }
+    .mr-lg-5.mright.mb-5 {
+        margin-right: 0rem !important;
+    }
+    .zz_experience {
+        margin-left: 2.5rem;
+    }
+    .zz_courses {
+        text-align: right;
+    }
+    .container.sobre, .container.fazemos, .container.cursos {
+        margin-top: 3rem;
+    }
     #desktop {
         display: none;
     }
@@ -310,7 +323,7 @@ header {
 
 .img-holder {
     height: 0;
-    padding-bottom: 33%;
+    padding-bottom: 25%;
     overflow: hidden;
 }
 
@@ -481,9 +494,9 @@ header {
     width: 70%;
 }
 
-.owl-nav {
+/* .owl-nav {
     display: none;
-}
+} */
 
 @media (max-width: 768px) {
     .testimonials-single {
