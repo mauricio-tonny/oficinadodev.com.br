@@ -601,7 +601,7 @@ header {
     margin-bottom: 0.1rem !important;    
 }
 
-.zz_version {
+.zz_version a {
     font-size: 11px;
     float: right;
     margin-right: 10px;
@@ -609,6 +609,9 @@ header {
     color: #fff;
     padding: 5px 10px;
     border-radius: 20px;
+}
+.zz_version a:hover{
+    transform: scale(1.1);
 }
 
 

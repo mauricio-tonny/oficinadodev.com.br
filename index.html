@@ -29,6 +29,11 @@ Author  : github.com/mauricio-tonny
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
 
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+
     <!-- Google tag (gtag.js) Mauricio -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-THXSR1J6PF"></script>
     <script>
@@ -61,7 +66,7 @@ Author  : github.com/mauricio-tonny
                                 <li class="nav-item"><a class="nav-link active" href="#home" aria-current="page">HOME<span class="sr-only">(current)</span></a></li>
                                 <li class="nav-item"><a class="nav-link" href="#tutoriais">TUTORIAIS</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#sobre">QUEM SOU EU</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#fazemos">O QUE FAZEMOS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#fazemos">O QUE FAÇO</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#cursos">CURSOS</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">CONTATO</a></li>
                                 <li class="nav-item">
@@ -245,7 +250,7 @@ Author  : github.com/mauricio-tonny
         <div class="container fazemos">
             <div class="section-title">
                 <small>Apaixonado por WEB</small>
-                <p class="zz_h3 tutor">O que fazemos</p>
+                <p class="zz_h3 tutor">O que faço</p>
             </div>
 
             <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -317,6 +322,7 @@ Author  : github.com/mauricio-tonny
             </div>
 
             <div class="testimonials owl-carousel">
+
                 <div class="testimonials-single Ms">
                     <div class="AboutPicture">
                         <img src="images/scrum-logo.png" width="150" height="150" alt="SCRUM" class="client-img">
@@ -341,15 +347,15 @@ Author  : github.com/mauricio-tonny
 
                 <div class="testimonials-single Ms">
                     <div class="AboutPicture">
-                        <img src="images/sebrae-logo.png" width="150" height="150" alt="Sebrae" class="client-img">
+                        <img src="images/cursoemvideo-logo.png" width="150" height="150" alt="Sebrae" class="client-img">
                     </div>
                     <div class="AboutDescription">
-                        <p class="zz_5 mt-4 mb-2">Varejo Mais Sebrae</p>
-                        <p class="blockquote">O Varejo Mais em Ação atua no combate dos problemas enfrentados pelos empresários do setor. É composto por autodiagnóstico e desenvolvimento de um plano de ação.</p>
-                        <p class="blockquote">O programa busca desenvolver uma mudança efetiva na gestão das empresas participantes, para que elas se tornem mais competitivas e conquistem a preferência de clientes. Ao profissionalizar suas atividades os resultados positivos remetem-se na área financeira da empresa, gerando um ciclo virtuoso de crescimento e satisfação de clientes. O programa é uma parceria entre o Sebrae/PR e a Fecomércio PR.</p>                        
+                        <p class="zz_5 mt-4 mb-2">PHP POO</p>
+                        <p class="blockquote">Programação Orientada a Objetos (POO) com a linguagem PHP.</p>
+                        <p class="blockquote">Aborda os principais conceitos como Classes, Objetos, instanciamento, abstração, encapsulamento, herança, polimorfismo e muito mais.</p>                        
                     </div>
-                </div>  
-                
+                </div>
+
                 <div class="testimonials-single Rt">
                     <div class="AboutDescription">
                         <p class="zz_5 mt-4 mb-2">Customer Experience Management</p>
@@ -360,13 +366,65 @@ Author  : github.com/mauricio-tonny
                         <img src="images/fiap-logo.png" width="150" height="150" alt="FIAP" class="client-img">
                     </div>
                 </div>
-            </div>
+
+                <div class="testimonials-single Ms">
+                    <div class="AboutPicture">
+                        <img src="images/sebrae-logo.png" width="150" height="150" alt="Sebrae" class="client-img">
+                    </div>
+                    <div class="AboutDescription">
+                        <p class="zz_5 mt-4 mb-2">Varejo Mais Sebrae</p>
+                        <p class="blockquote">O Varejo Mais em Ação atua no combate dos problemas enfrentados pelos empresários do setor. É composto por autodiagnóstico e desenvolvimento de um plano de ação.</p>
+                        <p class="blockquote">O programa busca desenvolver uma mudança efetiva na gestão das empresas participantes, para que elas se tornem mais competitivas e conquistem a preferência de clientes. Ao profissionalizar suas atividades os resultados positivos remetem-se na área financeira da empresa, gerando um ciclo virtuoso de crescimento e satisfação de clientes. O programa é uma parceria entre o Sebrae/PR e a Fecomércio PR.</p>                        
+                    </div>
+                </div>
+                
+                <div class="testimonials-single Rt">
+                    <div class="AboutDescription">
+                        <p class="zz_5 mt-4 mb-2">JavaScript</p>
+                        <p class="blockquote">Curso de linguagem JavaScript, para quem quiser aprender mais sobre ECMAScript, a versão padronizada do JS.</p>
+                        <p class="blockquote">Em um curso patrocinado pelo Google, o professor ensina o conteúdo básico em 6 módulos que vão desde o conhecimento da linguagem até o uso de funções.</p>                        
+                    </div>
+                    <div class="AboutPicture">
+                        <img src="images/cursoemvideo-logo.png" width="150" height="150" alt="FIAP" class="client-img">
+                    </div>
+                </div>
+                
+                <script>
+                    $(document).ready(function(){
+                        $('.testimonials').owlCarousel({
+                            loop: true,
+                            margin: 10,
+                            responsiveClass: true,
+                            autoplay: true, // Ativar autoplay
+                            autoplayTimeout: 6000, // Tempo de espera entre slides (em milissegundos)
+                            autoplayHoverPause: false, // Pausar quando mouse em cima
+                            responsive:{
+                                0:{
+                                    items:1,
+                                    nav:false,
+                                    loop: true
+                                },
+                                600:{
+                                    items:1,
+                                    nav:false,
+                                    loop: true
+                                },
+                                1000:{
+                                    items:1,
+                                    nav:false,
+                                    loop:true
+                                }
+                            }
+                        });
+                    });
+                </script>                
+            </div>            
 
             <div class="section-title zz_courses">
                 <a href="https://www.linkedin.com/in/mauriciotonny-silva/details/certifications/" id="courses" target="_blank" class="btn btn-primary">Ver no LinkedIn</a>                
             </div>            
 
-        </div>        
+        </div>      
 
     </div>
     <!-- // end .section -->
@@ -375,7 +433,7 @@ Author  : github.com/mauricio-tonny
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left">
-                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> Vamos conversar? Veja abaixo como falar comigo...</p>
+                    <p class="mb-2"> <span class="ti-comments-smiley mr-2"></span> Vamos conversar ?</p>
                     <div class=" d-block d-sm-inline-block">
                         <p class="mb-2">
                             <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:mauricio@plataformamagento.com.br">mauricio@plataformamagento.com.br</a>
@@ -393,6 +451,7 @@ Author  : github.com/mauricio-tonny
                         <a aria-label="Facebook" href="https://www.facebook.com/mauricio.tonny/" target="_blank"><span class="ti-facebook"></span></a>
                         <a aria-label="Instagram" href="https://www.instagram.com/mauricio.tonny/" target="_blank"><span class="ti-instagram"></span></a>
                         <a aria-label="Linkein" href="https://www.linkedin.com/in/mauriciotonny-silva/" target="_blank"><span class="ti-linkedin"></span></a>
+                        <a aria-label="GitHub" href="https://github.com/mauricio-tonny" target="_blank"><span class="ti-github"></span></a>
                     </div>
                 </div>
             </div>
@@ -405,7 +464,7 @@ Author  : github.com/mauricio-tonny
         <!-- Copyright -->
         <p class="mb-2"><small>TODOS OS DIREITOS RESERVADOS ©</small></p>
         <p class="mb-2"><small>DESENVOLVIDO POR <a href="https://github.com/mauricio-tonny" target="_blank" >MAURICIO SILVA</a></small></p>
-        <p class="mb-2 zz_version"><span>Versão: 2.8</span></p>
+        <p class="mb-2 zz_version"><a href="https://github.com/mauricio-tonny/oficinadodev.com.br/releases" target="_blank"><span>Versão: 2.9</span></a></p>
     </footer>
 
     <!-- jQuery and Bootstrap -->
