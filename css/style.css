@@ -2,7 +2,7 @@
 
 /*
 
-Version : 1.5
+Version : 3.0
 Author  : github.com/mauricio-tonny
 
 */
@@ -27,9 +27,14 @@ Author  : github.com/mauricio-tonny
 /* GLOBAL
 ----------------------*/
 
+@font-face {
+    font-family: 'Mauricio';
+    src: url('../fonts/Skyfall-Regular.woff') format('woff');        
+}
+
 body {
     font-family: 'Rubik', sans-serif, FontAwesome;
-    position: relative;
+    position: relative;   
 }
 
 a {
@@ -209,9 +214,14 @@ p.lead {
 
 /* MEGAMENU
 ----------------------*/
-
+.fa-code {
+    font-size: 2.0rem;
+}
 .img-fluid.logo {
-    max-width: 85%;
+    /* max-width: 85%; */
+    font-family: 'Mauricio';
+    font-size: 1.8rem;
+    
 }
 .nav-menu {
     padding: 1rem 0;
@@ -466,6 +476,21 @@ header {
     border-top-width: 3px;
     border-color: #194756 #faf6fb #FFF;
     color: #194756;
+}
+.section#parceiros {
+    padding: 40px 0 20px;
+}
+
+.parceiros {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.img-parceiros {
+    width: 150px;
+    height: 150px;
 }
 
 

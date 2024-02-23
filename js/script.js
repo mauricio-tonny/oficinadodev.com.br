@@ -1,11 +1,7 @@
 /*
 
-Style   : MobApp Script JS
-Version : 1.0
-Author  : Surjith S M
-URI     : https://surjithctly.in/
-
-Copyright © All rights Reserved 
+Version : 3.0
+Author  : github.com/mauricio-tonny
 
 */
 
@@ -110,3 +106,26 @@ $(function() {
     }
 
 }); /* End Fn */
+
+function atualizarLink() {
+    // Selecione o elemento <span>
+    var meuSpan = document.getElementById('meuSpan');
+
+    // Adicione um evento de clique ao <span>
+    meuSpan.addEventListener('click', function(event) {
+        // Evite o comportamento padrão do link
+        event.preventDefault();
+
+        // Obtenha o conteúdo do <span> (por exemplo, "Versão: V3.0")
+        var conteudoDoSpan = this.textContent;
+
+        // Remova "Versão: " e obtenha apenas a versão (por exemplo, "V3.0")
+        var versao = conteudoDoSpan.replace('Versão: ', '');
+
+        // Construa a URL com a versão
+        var novaURL = "https://github.com/mauricio-tonny/oficinadodev.com.br/releases/" + versao;
+
+        // Abra a nova URL em uma nova aba
+        window.open(novaURL, '_blank');
+    });
+}
